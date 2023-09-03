@@ -1,0 +1,24 @@
+{
+    "name":"AlTools",
+    "description":"Sample Al Tools",
+    "version":"0.0.1",
+    "manifest_version":3,
+    "background":{
+        "service_worker":"background.js"
+    },
+    "permissions":["storage","activeTab","contextMenus"],
+    "action":{
+        "default_popup":"popup.html"
+    },
+    "content_scripts":[
+        {
+            "matches":["https://*.google.com/*"],
+            "js":["content.js"]
+        }
+    ]
+    ,"icons": {
+        "16": "icon-small.png",
+        "48": "icon-bitty.png",
+        "128": "icon-large.png"
+      }
+}

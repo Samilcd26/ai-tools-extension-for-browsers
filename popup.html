@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Iconsscout -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <ul class="menu">
+                <li class="item">
+                    <i class=" uil uil-eye"></i>
+                    <span>preview</span>
+                </li>
+
+                <li class="item share">
+                    <div>
+                        <i class=" uil uil-share"></i>
+                    <span>share</span>
+                    </div>
+                    <i class=" uil uil-angle-right"></i>
+                    <ul class="share-menu">
+                        <li class="item">
+                            <i class=" uil uil-eye"></i>
+                            <span>preview</span>
+                        </li>
+        
+                        <li class="item">
+                            <i class=" uil uil-eye"></i>
+                            <span>preview</span>
+                        </li> 
+                    </ul>
+                </li>
+
+                <li class="item">
+                    <i class=" uil uil-eye"></i>
+                    <span>preview</span>
+                </li>
+
+                <li class="item">
+                    <i class=" uil uil-eye"></i>
+                    <span>preview</span>
+                </li>
+
+                
+            </ul>
+            <div class="setting">
+                <li class="item">
+                    <i class=" uil uil-setting"></i>
+                    <span>preview</span>
+                </li>
+
+            </div>
+        </div>
+    </div>
+
+    <section contextmenu="mymenu">
+        <menu type="context" id="mymenu">
+            <menuitem label="Refresh Post" onclick="window.location.reload();" icon="/images/refresh-icon.png"></menuitem>
+            <menuitem label="Skip to Comments" onclick="window.location='#comments';" icon="/images/comment_icon.gif"></menuitem>
+            <menu label="Share on..." icon="/images/share_icon.gif">
+                <menuitem label="Twitter" icon="/images/twitter_icon.gif" onclick="goTo('//twitter.com/intent/tweet?text=' + document.title + ':  ' + window.location.href);"></menuitem>
+                <menuitem label="Facebook" icon="/images/facebook_icon16x16.gif" onclick="goTo('//facebook.com/sharer/sharer.php?u=' + window.location.href);"></menuitem>
+            </menu>
+        </menu>
+    </section>
+
+    <!-- <script src="script.js"></script> -->
+</body>
+</html>
